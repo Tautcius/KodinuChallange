@@ -6,66 +6,50 @@ html {
   margin: 0;
   height: 100%;
 }
-
 body a,
 html a {
   text-decoration: none;
   color: white;
 }
-
 body {
   background-image: url(../assets/Background-mobile.png);
   color: white;
 }
-
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .logo {
   padding: 1em;
 }
-
 .hamburger {
   padding: 1em;
 }
-
 nav {
   position: absolute;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   display: none;
 }
-
 nav:hover {
   display: block;
 }
-
 nav a {
   display: block;
   line-height: 50px;
   text-align: center;
 }
-
 .hamburger:hover ~ nav {
   display: block;
 }
-
 .main {
   padding-left: 21px;
 }
-
 .main .title {
   font-size: 60px;
   letter-spacing: -2px;
   line-height: 60px;
 }
-
 .main .text {
   font-family: "Neue Haas Grotesk";
   font-size: 19px;
@@ -73,7 +57,6 @@ nav a {
   line-height: 23px;
   font-weight: normal;
 }
-
 button {
   border: none;
   color: white;
@@ -83,34 +66,24 @@ button {
   display: inline-block;
   font-size: 16px;
 }
-
 .book-now {
   background-color: #e33323;
 }
-
 .more-info {
   background-color: Transparent;
 }
-
 .reel {
   padding-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 30px;
 }
-
 .reel span {
   padding-left: 10px;
 }
-
 .dots {
   padding-top: 60px;
 }
-
 .trip-info {
   position: absolute;
   bottom: 0px;
@@ -122,23 +95,16 @@ button {
   padding: 0;
   background: rgba(0, 0, 0, 0.6);
 }
-
 .trip-info ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-padding-start: 31px;
-          padding-inline-start: 31px;
+  justify-content: space-around;
+  padding-inline-start: 31px;
 }
-
 .trip-info ul li {
   font-size: 9px;
   font-style: normal;
 }
-
 .trip-info ul li span {
   display: table-cell;
   vertical-align: middle;
@@ -146,7 +112,6 @@ button {
   font-size: 34px;
   font-weight: bold;
 }
-
 @media only screen and (min-width: 768px) {
   body,
   html {
@@ -162,25 +127,15 @@ button {
   }
   nav {
     position: static;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     background: none;
     clear: none;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
     padding-right: 44px;
   }
   nav:hover {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   nav a {
@@ -188,14 +143,9 @@ button {
     font-size: 12px;
   }
   .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
   .main .title {
     padding-top: 180px;
@@ -215,8 +165,6 @@ button {
     font-weight: medium;
   }
   .main .booking {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 300px;
     height: 45px;
@@ -257,14 +205,10 @@ button {
     padding: 0;
   }
   .extra-menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-padding-start: 31px;
-            padding-inline-start: 31px;
+    justify-content: space-around;
+    padding-inline-start: 31px;
   }
   .extra-menu ul li {
     font-size: 12px;
@@ -277,23 +221,15 @@ button {
     height: 150px;
   }
   .social-media ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     list-style-type: none;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     height: 100%;
   }
 }
-
 @media (max-width: 767px) {
   .content-to-hide {
     display: none;
   }
 }
-/*# sourceMappingURL=main.css.map */
