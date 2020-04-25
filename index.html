@@ -4,23 +4,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mobile 1 page</title>
+  <title>Maroco</title>
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-  <nav>
-    <img src="./assets/Logo.svg" alt="Logo" class="logo" />
-    <img src="./assets/Hamburger.svg" alt="Menu" class="menu" />
-  </nav>
   <header>
+    <a href="#" class="logo"><img src="./assets/Logo.svg" alt="Logo" /></a>
+    <a href="#" class="hamburger"><img src="./assets/Hamburger.svg" alt="Menu" /></a>
+    <nav>
+      <a href="#"><img src="./assets/Path 101.svg" alt="search"></a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </nav>
+  </header>
+  <section class="main">
     <h1 class="title">Best of Morocco</h1>
     <p class="text">Behold the cacophony of bazaars and the shimmering sahara when you journey to Morocco’s charming
       cities of
       Casablanca, Fes and Marrakesh, including visits to the life-giving oasis of Tinghir, Todra Gorge and Ouarzazate
     </p>
-    <button class="btn book-now">Book Now</button>
-    <button class="btn more-info">More Info</button>
+
+    <div class="booking">
+      <button class="btn book-now">Book Now</button>
+      <button class="btn more-info">More Info</button>
+    </div>
+    <div class="arrows content-to-hide">
+      <a href="#"><img src="/assets/Group 81.png" alt="back"></a>
+      <a href="#"><img src="/assets/Group 80.png" alt="forward"></a>
+    </div>
     <div class="reel">
       <img src="./assets/Symbol 5 – 13.svg" alt="Play">
       <span class="reel-text">Whatch Reel</span>
@@ -30,9 +42,9 @@
       <img src="./assets/Dots.svg" alt="Dots">
     </div>
 
-  </header>
+  </section>
 
-  <section class="trip-info">
+  <div class="trip-info">
     <ul>
       <li>Days
         <span>10</span></li>
@@ -43,7 +55,23 @@
       <li>Cities
         <span>08</span></li>
     </ul>
-  </section>
+  </div>
+  <div class=" content-to-hide">
+    <ul class="">
+      <li><a href="#">Discover</a></li>
+      <li><a href="#">Plan a trip</a></li>
+      <li><a href="#">All tours</a></li>
+      <li><a href="#">Hotels</a></li>
+      <li><a href="#">Our Blog</a></li>
+    </ul>
+  </div>
+  <div class="social-media content-to-hide">
+    <ul>
+      <li><a href="#"><img src="/assets/Path 3.svg" alt="facebook"></a></li>
+      <li><a href="#"><img src="/assets/Group 3.svg" alt="twitter"></a></li>
+      <li><a href="#"><img src="/assets/Group 5.svg" alt="youtube"></a></li>
+    </ul>
+  </div>
 </body>
 
 </html>
