@@ -159,7 +159,7 @@ button {
   .main .text {
     padding-top: 250px;
     padding-left: 100px;
-    margin-right: 50px;
+    margin-right: 120px;
     width: 308px;
     height: 162px;
     font-size: 18px;
@@ -169,7 +169,7 @@ button {
     display: inline-flex;
     width: 300px;
     height: 45px;
-    margin-left: 250px;
+    margin-left: 180px;
   }
   .main .arrows {
     padding-left: 150px;
