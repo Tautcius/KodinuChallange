@@ -1,9 +1,11 @@
 import Data from "./data.js"
 
 // reserved for future to select dificulty
-const initialArray = Data.splice(0, Data.length - 2);
+const initialArray = Data.splice(0, Data.length - 11);
 const arrayToShuffle = initialArray.concat(initialArray);
-console.log(arrayToShuffle.length);
+
+//Timer and counts of flips
+
 
 // Shuffle data
 function shuffle(array) {
@@ -23,16 +25,11 @@ let cardsWonId = [];
 // Check for match
 function checkMatch() {
     let allCards = document.querySelectorAll('.card');
-    console.log(allCards);
-    const firstCard = cardsChosen[0];
-    console.log(firstCard);
-    const secondCard = cardsChosen[1];
-    console.log(secondCard);
-    if (firstCard !== secondCard) {
-        allCards[cardsMatchedId[0]].classList.remove('flip');
-        console.log(allCards[cardsMatchedId[0]]);
-        allCards[cardsMatchedId[1]].classList.remove('flip');
-        console.log(allCards[cardsMatchedId[1]]);
+    if (cardsChosen[0] !== cardsChosen[1]) {
+        setTimeout(
+            allCards[cardsMatchedId[0]].classList.remove('flip'), 400);
+        setTimeout(
+            allCards[cardsMatchedId[1]].classList.remove('flip'), 400);
         console.log("No Match");
     } else {
         console.log("It's a Match");
@@ -40,20 +37,49 @@ function checkMatch() {
     }
     cardsChosen = [];
     cardsMatchedId = [];
+    finished();
 }
 
 // fliping cards
+var flips = 0;
 function flipCard() {
+    startCount();
+    flips++;
+    document.getElementById('flips').innerHTML = flips;
     let cardId = this.getAttribute('data-id');
     cardsChosen.push(finalArray[cardId].name);
-    console.log(finalArray[cardId].name);
     cardsMatchedId.push(cardId);
-    console.log(cardId);
     this.classList.add('flip');
+    if (cardsMatchedId[0] === cardsMatchedId[1]) {
+        cardsChosen.pop();
+        cardsMatchedId.pop();
+    }
     if (cardsChosen.length === 2) {
-        checkMatch();
+        setTimeout(checkMatch, 400);
     }
 
+}
+// Time calculation
+var c = 0;
+var t;
+var timer_is_on = 0;
+
+function timedCount() {
+    document.getElementById('time').innerHTML = c;
+    c = c + 1;
+    t = setTimeout(timedCount, 1000);
+}
+
+function startCount() {
+    if (!timer_is_on) {
+        timer_is_on = 1;
+        timedCount();
+    }
+}
+
+function stopCount() {
+    clearTimeout(t);
+    timer_is_on = 0;
 }
 
 //creating cards
@@ -79,7 +105,19 @@ function createGrid(arrayToPlay) {
     }
 }
 
+
+
+
+//Finish function
+function finished() {
+    if (finalArray.length == cardsWonId.length) {
+        console.log(finalArray.length)
+        console.log(cardsWonId.length)
+        stopCount();
+        document.getElementById('winner').classList.add('open');
+        document.getElementById('winTime').innerHTML = c;
+        document.getElementById('winFlips').innerHTML = flips;
+    }
+}
 // Create grid
 createGrid(finalArray);
-
-
