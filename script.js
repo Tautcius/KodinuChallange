@@ -105,9 +105,6 @@ function createGrid(arrayToPlay) {
     }
 }
 
-
-
-
 //Finish function
 function finished() {
     if (finalArray.length == cardsWonId.length) {
