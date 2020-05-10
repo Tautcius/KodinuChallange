@@ -1,11 +1,11 @@
-# Pirma uzduotis
+# Antra užduotis
 
-Šios užduoties tikslas yra CSS dizaino karpymas. Todėl jokio JS nei jo frameworko nenaudojau. 
+Pradėjau daryti nesulaukes video, o naudojausi šiais tutorialais
+[https://youtu.be/ZniVgo8U7ek](https://youtu.be/ZniVgo8U7ek)
+[https://youtu.be/tjyDOHzKN0w](https://youtu.be/tjyDOHzKN0w)
 
-Dizaino nuoroda [https://www.behance.net/gallery/90689863/Africa-Travel-Co-UI-Kit-Free-for-Adobe-XD?tracking_source=search_projects_recommended%7Cafrica%20tavel%20co]()
-Dizaino nuoroda [https://www.behance.net/gallery/90689863/Africa-Travel-Co-UI-Kit-Free-for-Adobe-XD?tracking_source=search_projects_recommended%7Cafrica%20tavel%20co]()
+Pirma karta dirbau su vanilla JS, nes siaip labiau Vue Naudoju.
 
-Linkas i demo:
-[https://tautcius-kodinu-challange.netlify.app/](https://tautcius-kodinu-challange.netlify.app/)
+Bandziau ideti skirtingus lygius. Bet suprantu kadsu global variables ir kita struktura susimeciau nuo pat pradziu, todel manau perdarinesiu ši žaidimasu Vue3, kad ir frameworka suprasčiau geriau ir lengviau struktūra susideliotų.
 
-NOTE: dizainas buvo gamintas 1280x800 rezoliucijai, karpymas irgi taikytas tokiai.
+[Demo](https://sleepy-mclean-402a3e.netlify.app/)
