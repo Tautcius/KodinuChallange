@@ -1,11 +1,8 @@
 import Data from "./data.js"
 
 // reserved for future to select dificulty
-const initialArray = Data.splice(0, Data.length - 11);
+const initialArray = Data.splice(0, Data.length - 2);
 const arrayToShuffle = initialArray.concat(initialArray);
-
-//Timer and counts of flips
-
 
 // Shuffle data
 function shuffle(array) {
