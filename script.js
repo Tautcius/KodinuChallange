@@ -8,7 +8,7 @@ let finalArray = []
 document.getElementById("startGame").onclick = function () { selectDificulty() };
 
 function selectDificulty() {
-    var node = document.querySelector('.container')
+    let node = document.querySelector('.container')
     node.querySelectorAll('*').forEach(n => n.remove());
     const e = document.getElementById("dificulty");
     let dificulty = null;
