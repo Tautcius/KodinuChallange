@@ -1,3 +1,4 @@
+
 const Data =
     [
         {
@@ -58,4 +59,20 @@ const Data =
         }
     ]
 
-export default Data
+export function setDificuty(dificulty) {
+    const initialArray = Data.splice(0, Data.length - dificulty);
+    const arrayToShuffle = initialArray.concat(initialArray);
+    return shuffle(arrayToShuffle);
+}
+
+
+function shuffle(arrayToShuffle) {
+    let playArray = [];
+    while (arrayToShuffle.length !== 0) {
+        let randomIndex = Math.floor(Math.random() * arrayToShuffle.length);
+        playArray.push(arrayToShuffle[randomIndex]);
+        arrayToShuffle.splice(randomIndex, 1);
+    }
+    return playArray;
+
+};

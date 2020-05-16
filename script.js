@@ -1,21 +1,9 @@
-import Data from "./data.js"
+import { setDificuty } from "./data.js"
 
-// reserved for future to select dificulty
-const initialArray = Data.splice(0, Data.length - 2);
-const arrayToShuffle = initialArray.concat(initialArray);
+const dificulty = 2;
 
-// Shuffle data
-function shuffle(array) {
-    let playArray = [];
-    while (array.length !== 0) {
-        let randomIndex = Math.floor(Math.random() * array.length);
-        playArray.push(array[randomIndex]);
-        array.splice(randomIndex, 1);
-    }
-    return playArray;
-};
-
-const finalArray = shuffle(arrayToShuffle);
+const finalArray = setDificuty(dificulty);
+console.log('Final array ' + finalArray);
 let cardsChosen = [];
 let cardsMatchedId = [];
 let cardsWonId = [];
@@ -85,20 +73,17 @@ console.log(grid);
 function createGrid(arrayToPlay) {
     for (let i = 0; i < arrayToPlay.length; i++) {
         const card = document.createElement('div');
-        const front = document.createElement('div');
-        const back = document.createElement('div');
         const imgKodinu = document.createElement('img');
         const imgGuess = document.createElement('img');
-        front.setAttribute('class', 'front')
-        back.setAttribute('class', 'back');
         card.setAttribute('class', 'card');
         imgKodinu.setAttribute('src', './asset/Kodinu.png');
-        imgGuess.setAttribute('src', arrayToPlay[i].path)
+        imgKodinu.setAttribute('class', 'back');
+        imgGuess.setAttribute('src', arrayToPlay[i].path);
+        imgGuess.setAttribute('class', 'front');
         card.setAttribute('data-id', i);
         card.addEventListener('click', flipCard);
-        grid.appendChild(card).append(front, back);
-        back.appendChild(imgKodinu);
-        front.appendChild(imgGuess);
+        grid.appendChild(card).append(imgKodinu, imgGuess);
+
     }
 }
 
