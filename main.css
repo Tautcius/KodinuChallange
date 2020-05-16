@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+}
+/* info container */
+.info > h2 {
+    font-size: 40px;
+    padding: 0.2rem;
+}
+.info {
+    text-align: center;
+}
+.game-info {
+    display: flex;
+    padding: 0.2rem;
+    justify-content: space-around;
+}
+/* game container */
+.container {
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: auto;
+    perspective: 1000px;
+}
+.card {
+    width: 18vh;
+    height: 18vh;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+    display: flex;
+    background: darkseagreen;
+    border-radius: 5px;
+}
+.card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+}
+.card.flip {
+    transform: rotateY(180deg);
+}
+.front,
+.back {
+    background: darkseagreen;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    width: 100%;
+    position: absolute;
+    align-self: center;
+    padding: 20px;
+}
+.front {
+    transform: rotateY(180deg);
+}
+
+.modal {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: lightgreen;
+}
+.modal.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
