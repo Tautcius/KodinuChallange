@@ -15,7 +15,7 @@ body {
 }
 /* info container */
 .info > h2 {
-    font-size: 60px;
+    font-size: 40px;
     padding: 0.2rem;
 }
 .info {
@@ -29,17 +29,17 @@ body {
 /* game container */
 .container {
     height: 80%;
-    width: 75%;
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     margin: auto;
     perspective: 1000px;
 }
 .card {
-    width: 20vh;
-    height: 20vh;
+    width: 18vh;
+    height: 18vh;
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;

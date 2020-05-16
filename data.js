@@ -59,7 +59,8 @@ const Data =
         }
     ]
 
-export function setDificuty(dificulty) {
+export function setDificulty(dificulty) {
+    const dataCopy = Data;
     const initialArray = Data.splice(0, Data.length - dificulty);
     const arrayToShuffle = initialArray.concat(initialArray);
     return shuffle(arrayToShuffle);
