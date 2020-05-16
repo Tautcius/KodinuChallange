@@ -2,59 +2,59 @@ const Data =
     [
         {
             name: "ACDC",
-            path: "./asset/ACDC.png"
+            path: "../asset/ACDC.png"
         },
         {
             name: "BIC",
-            path: "./asset/BIC.png"
+            path: "../asset/BIC.png"
         },
         {
             name: "Cars",
-            path: "./asset/Cars.png"
+            path: "../asset/Cars.png"
         },
         {
             name: "Chupachups",
-            path: "./asset/Chupachups.png"
+            path: "../asset/Chupachups.png"
         },
         {
             name: "CIA",
-            path: "./asset/CIA.png"
+            path: "../asset/CIA.png"
         },
         {
             name: "Disney",
-            path: "./asset/Disney.png"
+            path: "../asset/Disney.png"
         },
         {
             name: "DreamWorks",
-            path: "./asset/DreamWorks.png"
+            path: "../asset/DreamWorks.png"
         },
         {
             name: "Durex",
-            path: "./asset/Durex.png"
+            path: "../asset/Durex.png"
         },
         {
             name: "GameOfThrones",
-            path: "./asset/GameOfThrones.png"
+            path: "../asset/GameOfThrones.png"
         },
         {
             name: "Heineken",
-            path: "./asset/Heineken.png"
+            path: "../asset/Heineken.png"
         },
         {
             name: "History",
-            path: "./asset/History.png"
+            path: "../asset/History.png"
         },
         {
             name: "Lego",
-            path: "./asset/Lego.png"
+            path: "../asset/Lego.png"
         },
         {
             name: "Levis",
-            path: "./asset/Levis.png"
+            path: "../asset/Levis.png"
         },
         {
             name: "Metallica",
-            path: "./asset/Metallica.png"
+            path: "../asset/Metallica.png"
         }
     ]
 
